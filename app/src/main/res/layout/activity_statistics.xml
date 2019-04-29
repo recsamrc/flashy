@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".StatisticsActivity"
+android:background="@color/colorPrimaryDark">
+    <TextView
+            style="@style/text.L"
+            android:id="@+id/txt_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="100dp" app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            style="@style/text.L"
+            android:id="@+id/txt_failure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/txt_success" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="20dp"/>
+
+    <Button
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:background="@color/colorAccent"
+            android:id="@+id/gotoMain"
+            android:text="Back to Mainmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="60dp" app:layout_constraintHorizontal_bias="0.497"/>
+
+</android.support.constraint.ConstraintLayout>

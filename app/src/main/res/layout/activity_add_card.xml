@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AddCardActivity"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark">
+    <android.support.v7.widget.Toolbar
+            app:titleTextColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="Add Card"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"/>
+
+    <TextView
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Card Title"
+            style="@style/text.M"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <EditText
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            style="@style/text.M"
+            android:id="@+id/ed_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            style="@style/text.M"
+            android:text="Front Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <EditText
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            style="@style/text.M"
+            android:id="@+id/ed_front"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            style="@style/text.M"
+            android:layout_marginTop="16dp"
+            android:text="Back Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <EditText
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            style="@style/text.M"
+            android:id="@+id/ed_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <Button
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/colorAccent"
+            style="@style/text.M"
+            android:layout_marginTop="24dp"
+            android:id="@+id/btnPreview"
+            android:text="Preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>
